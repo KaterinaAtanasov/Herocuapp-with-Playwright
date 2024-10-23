@@ -26,9 +26,9 @@ public class Config {
         }
 
         BASE_URL = prop.getProperty("base_url");
-        BROWSER_TYPE = prop.getProperty("browser_type");
+        BROWSER_TYPE = System.getProperty("browser_type", prop.getProperty("browser_type"));
         USERNAME = prop.getProperty("username");
         PASSWORD = prop.getProperty("password");
-        HEADLESS = Boolean.valueOf(prop.getProperty("headless"));
+        HEADLESS = Boolean.valueOf(System.getProperty("headless", prop.getProperty("headless")));
     }
 }
