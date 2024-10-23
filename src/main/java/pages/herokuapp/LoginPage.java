@@ -22,4 +22,19 @@ public class LoginPage extends BasePage{
     public String getAlertText() {
         return page.innerText("#flash");
     }
+    public String getWelcomeMessageText() {
+        return page.innerText(".subheader");
+    }
+
+    public String getSecureAreaHeaderText() {
+        return page.innerText("h2");
+    }
+
+    public String getLogoutButtonText() {
+        return page.innerText(".button.secondary.radius");
+    }
+
+    public void logout() {
+        page.click(".button.secondary.radius");
+    }
 }

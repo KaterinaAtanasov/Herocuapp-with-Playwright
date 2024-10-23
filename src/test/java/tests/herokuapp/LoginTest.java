@@ -16,10 +16,15 @@ public class LoginTest extends BaseTest {
     @Test
     public void testSuccessfulLogin() {
         loginPage.navigate();
-        assertEquals(page.innerText("h2"), "Login Page",
-                "Heading does not match the expected text");
         loginPage.login();
-        assertTrue(loginPage.getAlertText().contains("You logged into a secure area!"),
-                "Alert text does not contain the expected message");
+        assertTrue(loginPage.getAlertText().contains("You logged into a secure area!"), "Alert text does not" +
+                " contain the expected message");
+        assertEquals(loginPage.getSecureAreaHeaderText(), "Secure Area", "Header does not match the" +
+                " expected text");
+
+        assertEquals(loginPage.getWelcomeMessageText(), "Welcome to the Secure Area. When you are done click" +
+                " logout below.", "Welcome message does not match the expected text");
+        assertEquals(loginPage.getLogoutButtonText(), "Logout", "Logout button text does not match " +
+                "the expected text");
     }
 }
