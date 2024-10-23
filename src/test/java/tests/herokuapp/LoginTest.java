@@ -16,7 +16,7 @@ public class LoginTest extends BaseTest {
     @Test
     public void testSuccessfulLogin() {
         loginPage.navigate();
-        loginPage.login();
+        loginPage.loginWithCredentials(true);
         assertTrue(loginPage.getAlertText().contains("You logged into a secure area!"), "Alert text does not" +
                 " contain the expected message");
         assertEquals(loginPage.getSecureAreaHeaderText(), "Secure Area", "Header does not match the" +
@@ -26,5 +26,14 @@ public class LoginTest extends BaseTest {
                 " logout below.", "Welcome message does not match the expected text");
         assertEquals(loginPage.getLogoutButtonText(), "Logout", "Logout button text does not match " +
                 "the expected text");
+    }
+    @Test
+    public void testUnsuccessfulLogin() {
+        loginPage.navigate();
+        loginPage.loginWithCredentials(false);
+        String errorMessage = loginPage.getErrorMessage();
+        assertTrue(errorMessage.contains("Your username is invalid!") || errorMessage.contains("Your password " +
+                        "is invalid!"),
+                "Error message does not contain the expected text");
     }
 }

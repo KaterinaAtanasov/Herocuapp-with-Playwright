@@ -10,6 +10,9 @@ public class Config {
     public static final String USERNAME;
     public static final String PASSWORD;
     public static final Boolean HEADLESS;
+    public static final String INVALID_USERNAME;
+    public static final String INVALID_PASSWORD;
+
 
     static {
         Properties prop = new Properties();
@@ -30,5 +33,7 @@ public class Config {
         USERNAME = prop.getProperty("username");
         PASSWORD = prop.getProperty("password");
         HEADLESS = Boolean.valueOf(System.getProperty("headless", prop.getProperty("headless")));
+        INVALID_USERNAME = prop.getProperty("invalid_username");
+        INVALID_PASSWORD = prop.getProperty("invalid_password");
     }
 }

@@ -13,9 +13,11 @@ public class LoginPage extends BasePage{
     public void navigate() {
         super.navigate(URL);
     }
-    public void login() {
-        page.fill("#username", Config.USERNAME);
-        page.fill("#password", Config.PASSWORD);
+    public void loginWithCredentials(boolean isValidUser) {
+        String username = isValidUser ? Config.USERNAME : Config.INVALID_USERNAME;
+        String password = isValidUser ? Config.PASSWORD : Config.INVALID_PASSWORD;
+        page.fill("#username", username);
+        page.fill("#password", password);
         page.click(".radius");
     }
 
@@ -36,5 +38,9 @@ public class LoginPage extends BasePage{
 
     public void logout() {
         page.click(".button.secondary.radius");
+    }
+
+    public String getErrorMessage() {
+        return page.innerText("#flash");
     }
 }
