@@ -1,28 +1,31 @@
 package tests.herokuapp;
-import org.testng.annotations.Test;
-import org.testng.annotations.BeforeMethod;
-import pages.herokuapp.AddRemoveElements;
-import static org.testng.Assert.assertEquals;
-public class AddRemoveElementsTest extends BaseTest{
 
-    private AddRemoveElements addRemoveElements;
+import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.Test;
+import pages.herokuapp.AddRemoveElementsPage;
+import pages.herokuapp.AddRemoveElementsPage;
+
+import static org.testng.Assert.assertEquals;
+
+public class AddRemoveElementsTest extends BaseTest {
+    private AddRemoveElementsPage addRemoveElements;
+    private static final String H3_SELECTOR = "h3";
+    private static final String PAGE_TITLE = "Add/Remove Elements";
+
     @BeforeMethod
     public void setUp() {
         super.setUp();
-        addRemoveElements = new AddRemoveElements(page);
+        addRemoveElements = new AddRemoveElementsPage(page);
     }
-    @Test
-    public void testAddRemoveElements() {
-        int elementCount = 5;
 
-        addRemoveElements.navigate();
-        assertEquals(page.innerText("h3"), "Add/Remove Elements",
+    @Test
+    public void verifyCorrectNumberToDeleteButtonsAfterAddAndRemove() {
+        int elementCount = 5;
+        assertEquals(page.innerText(H3_SELECTOR), PAGE_TITLE,
                 "Heading does not match the expected text");
         addRemoveElements.addElements(elementCount);
-
-       assertEquals(addRemoveElements.getNumberOfDeleteButtons(), elementCount,
+        assertEquals(addRemoveElements.getNumberOfDeleteButtons(), elementCount,
                 "The number of delete buttons is not as expected after adding elements");
-
         addRemoveElements.removeElements(elementCount);
         assertEquals(addRemoveElements.getNumberOfDeleteButtons(), 0,
                 "The number of delete buttons is not as expected after removing elements");

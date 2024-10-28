@@ -12,13 +12,13 @@
         <maven.compiler.source>17</maven.compiler.source>
         <maven.compiler.target>17</maven.compiler.target>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <playwright.version>1.46.0</playwright.version>
     </properties>
-
     <dependencies>
         <dependency>
             <groupId>com.microsoft.playwright</groupId>
             <artifactId>playwright</artifactId>
-            <version>1.46.0</version>
+            <version>${playwright.version}</version>
         </dependency>
         <dependency>
             <groupId>org.testng</groupId>
@@ -42,7 +42,7 @@
                 <version>2.22.2</version>
                 <configuration>
                     <suiteXmlFiles>
-                        <suiteXmlFile>src/test/resources/tests.xml</suiteXmlFile>
+                        <suiteXmlFile>src/test/resources/herokuappUITestsSuite.xml</suiteXmlFile>
                     </suiteXmlFiles>
                 </configuration>
             </plugin>

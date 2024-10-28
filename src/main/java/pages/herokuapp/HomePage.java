@@ -1,17 +1,12 @@
 package pages.herokuapp;
-import com.herokuapp.playwright.Config;
 import com.microsoft.playwright.Page;
 
-public class HomePage extends BasePage{
-
-    private static final String URL = Config.BASE_URL;
+public class HomePage extends BasePage {
+    private static final String RELATIVE_URL = "";
 
     public HomePage(Page page) {
         super(page);
-    }
-
-    public void navigate() {
-        super.navigate(URL);
+        this.navigate(RELATIVE_URL);
     }
 
     public String getInnerText(String selector) {

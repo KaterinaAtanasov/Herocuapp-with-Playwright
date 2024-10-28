@@ -4,18 +4,18 @@
 <th>Method name</th>
 <th>Groups</th>
 </tr><tr>
-<td>tests.herokuapp.HomePageTest</td>
+<td>tests.herokuapp.LoginTest</td>
 <td>&nbsp;</td><td>&nbsp;</td></tr>
 <tr>
 <td align='center' colspan='3'>@Test</td>
 </tr>
 <tr>
 <td>&nbsp;</td>
-<td>testHomePageTitle</td>
+<td>verifyLoginAttemptWithInvalidCredentialsDisplaysErrorMessage</td>
 <td>&nbsp;</td></tr>
 <tr>
 <td>&nbsp;</td>
-<td>testHomePageTexts</td>
+<td>verifyLoginWithValidCredentialsRedirectsToSecureArea</td>
 <td>&nbsp;</td></tr>
 <tr>
 <td align='center' colspan='3'>@BeforeClass</td>
@@ -46,14 +46,18 @@
 <td>tearDownClass</td>
 <td>&nbsp;</td></tr>
 <tr>
-<td>tests.herokuapp.LoginTest</td>
+<td>tests.herokuapp.HomeTest</td>
 <td>&nbsp;</td><td>&nbsp;</td></tr>
 <tr>
 <td align='center' colspan='3'>@Test</td>
 </tr>
 <tr>
 <td>&nbsp;</td>
-<td>testSuccessfulLogin</td>
+<td>verifyHomePageDisplaysCorrectText</td>
+<td>&nbsp;</td></tr>
+<tr>
+<td>&nbsp;</td>
+<td>verifyHomePageTitleIsCorrect</td>
 <td>&nbsp;</td></tr>
 <tr>
 <td align='center' colspan='3'>@BeforeClass</td>
@@ -91,7 +95,7 @@
 </tr>
 <tr>
 <td>&nbsp;</td>
-<td>testAddRemoveElements</td>
+<td>verifyCorrectNumberToDeleteButtonsAfterAddAndRemove</td>
 <td>&nbsp;</td></tr>
 <tr>
 <td align='center' colspan='3'>@BeforeClass</td>

@@ -1,4 +1,5 @@
 package pages.herokuapp;
+import com.herokuapp.playwright.Config;
 import com.microsoft.playwright.Page;
 public class BasePage {
 
@@ -8,8 +9,8 @@ public class BasePage {
         this.page = page;
     }
 
-    public void navigate(String url) {
-        page.navigate(url);
+    public void navigate(String path) {
+        page.navigate(Config.BASE_URL + path);
     }
 
     public String getTitle(){

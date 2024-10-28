@@ -2,7 +2,7 @@
 <suite name="AllTestsSuite">
     <test name="HomePageTest">
         <classes>
-            <class name="tests.herokuapp.HomePageTest"/>
+            <class name="tests.herokuapp.HomeTest"/>
         </classes>
     </test>
     <test name="LoginTest">

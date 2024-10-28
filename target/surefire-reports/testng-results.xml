@@ -1,89 +1,101 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="4" passed="4" failed="0" skipped="0">
+<testng-results ignored="0" total="5" passed="5" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-10-23T13:07:30 EEST" name="AllTestsSuite" finished-at="2024-10-23T13:08:04 EEST" duration-ms="33420">
+  <suite started-at="2024-10-28T18:16:17 EET" name="AllTestsSuite" finished-at="2024-10-28T18:16:59 EET" duration-ms="42648">
     <groups>
     </groups>
-    <test started-at="2024-10-23T13:07:30 EEST" name="HomePageTest" finished-at="2024-10-23T13:07:51 EEST" duration-ms="20966">
-      <class name="tests.herokuapp.HomePageTest">
-        <test-method is-config="true" signature="setUpClass()[pri:0, instance:tests.herokuapp.HomePageTest@3bd40a57]" started-at="2024-10-23T13:07:30 EEST" name="setUpClass" finished-at="2024-10-23T13:07:45 EEST" duration-ms="14321" status="PASS">
+    <test started-at="2024-10-28T18:16:17 EET" name="HomePageTest" finished-at="2024-10-28T18:16:41 EET" duration-ms="24302">
+      <class name="tests.herokuapp.HomeTest">
+        <test-method is-config="true" signature="setUpClass()[pri:0, instance:tests.herokuapp.HomeTest@3bd40a57]" started-at="2024-10-28T18:16:17 EET" name="setUpClass" finished-at="2024-10-28T18:16:32 EET" duration-ms="15039" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpClass -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:tests.herokuapp.HomePageTest@3bd40a57]" started-at="2024-10-23T13:07:45 EEST" name="setUp" finished-at="2024-10-23T13:07:46 EEST" duration-ms="1625" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:tests.herokuapp.HomeTest@3bd40a57]" started-at="2024-10-28T18:16:32 EET" name="setUp" finished-at="2024-10-28T18:16:37 EET" duration-ms="5306" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="testHomePageTexts()[pri:0, instance:tests.herokuapp.HomePageTest@3bd40a57]" started-at="2024-10-23T13:07:46 EEST" name="testHomePageTexts" finished-at="2024-10-23T13:07:48 EEST" duration-ms="2015" status="PASS">
+        <test-method signature="verifyHomePageDisplaysCorrectText()[pri:0, instance:tests.herokuapp.HomeTest@3bd40a57]" started-at="2024-10-28T18:16:37 EET" name="verifyHomePageDisplaysCorrectText" finished-at="2024-10-28T18:16:37 EET" duration-ms="76" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- testHomePageTexts -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.herokuapp.HomePageTest@3bd40a57]" started-at="2024-10-23T13:07:48 EEST" name="tearDown" finished-at="2024-10-23T13:07:48 EEST" duration-ms="27" status="PASS">
+        </test-method> <!-- verifyHomePageDisplaysCorrectText -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.herokuapp.HomeTest@3bd40a57]" started-at="2024-10-28T18:16:37 EET" name="tearDown" finished-at="2024-10-28T18:16:37 EET" duration-ms="28" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:tests.herokuapp.HomePageTest@3bd40a57]" started-at="2024-10-23T13:07:48 EEST" name="setUp" finished-at="2024-10-23T13:07:49 EEST" duration-ms="245" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:tests.herokuapp.HomeTest@3bd40a57]" started-at="2024-10-28T18:16:37 EET" name="setUp" finished-at="2024-10-28T18:16:40 EET" duration-ms="2731" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="testHomePageTitle()[pri:0, instance:tests.herokuapp.HomePageTest@3bd40a57]" started-at="2024-10-23T13:07:49 EEST" name="testHomePageTitle" finished-at="2024-10-23T13:07:50 EEST" duration-ms="1776" status="PASS">
+        <test-method signature="verifyHomePageTitleIsCorrect()[pri:0, instance:tests.herokuapp.HomeTest@3bd40a57]" started-at="2024-10-28T18:16:40 EET" name="verifyHomePageTitleIsCorrect" finished-at="2024-10-28T18:16:40 EET" duration-ms="7" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- testHomePageTitle -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.herokuapp.HomePageTest@3bd40a57]" started-at="2024-10-23T13:07:50 EEST" name="tearDown" finished-at="2024-10-23T13:07:51 EEST" duration-ms="19" status="PASS">
+        </test-method> <!-- verifyHomePageTitleIsCorrect -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.herokuapp.HomeTest@3bd40a57]" started-at="2024-10-28T18:16:40 EET" name="tearDown" finished-at="2024-10-28T18:16:40 EET" duration-ms="20" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:tests.herokuapp.HomePageTest@3bd40a57]" started-at="2024-10-23T13:07:51 EEST" name="tearDownClass" finished-at="2024-10-23T13:07:51 EEST" duration-ms="912" status="PASS">
+        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:tests.herokuapp.HomeTest@3bd40a57]" started-at="2024-10-28T18:16:40 EET" name="tearDownClass" finished-at="2024-10-28T18:16:41 EET" duration-ms="1061" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDownClass -->
-      </class> <!-- tests.herokuapp.HomePageTest -->
+      </class> <!-- tests.herokuapp.HomeTest -->
     </test> <!-- HomePageTest -->
-    <test started-at="2024-10-23T13:07:51 EEST" name="LoginTest" finished-at="2024-10-23T13:07:58 EEST" duration-ms="6099">
+    <test started-at="2024-10-28T18:16:41 EET" name="LoginTest" finished-at="2024-10-28T18:16:52 EET" duration-ms="10760">
       <class name="tests.herokuapp.LoginTest">
-        <test-method is-config="true" signature="setUpClass()[pri:0, instance:tests.herokuapp.LoginTest@184cf7cf]" started-at="2024-10-23T13:07:51 EEST" name="setUpClass" finished-at="2024-10-23T13:07:52 EEST" duration-ms="970" status="PASS">
+        <test-method is-config="true" signature="setUpClass()[pri:0, instance:tests.herokuapp.LoginTest@2fd6b6c7]" started-at="2024-10-28T18:16:41 EET" name="setUpClass" finished-at="2024-10-28T18:16:42 EET" duration-ms="1085" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpClass -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:tests.herokuapp.LoginTest@184cf7cf]" started-at="2024-10-23T13:07:52 EEST" name="setUp" finished-at="2024-10-23T13:07:54 EEST" duration-ms="1516" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:tests.herokuapp.LoginTest@2fd6b6c7]" started-at="2024-10-28T18:16:42 EET" name="setUp" finished-at="2024-10-28T18:16:46 EET" duration-ms="4287" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="testSuccessfulLogin()[pri:0, instance:tests.herokuapp.LoginTest@184cf7cf]" started-at="2024-10-23T13:07:54 EEST" name="testSuccessfulLogin" finished-at="2024-10-23T13:07:57 EEST" duration-ms="2631" status="PASS">
+        <test-method signature="verifyLoginAttemptWithInvalidCredentialsDisplaysErrorMessage()[pri:0, instance:tests.herokuapp.LoginTest@2fd6b6c7]" started-at="2024-10-28T18:16:46 EET" name="verifyLoginAttemptWithInvalidCredentialsDisplaysErrorMessage" finished-at="2024-10-28T18:16:47 EET" duration-ms="648" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- testSuccessfulLogin -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.herokuapp.LoginTest@184cf7cf]" started-at="2024-10-23T13:07:57 EEST" name="tearDown" finished-at="2024-10-23T13:07:57 EEST" duration-ms="22" status="PASS">
+        </test-method> <!-- verifyLoginAttemptWithInvalidCredentialsDisplaysErrorMessage -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.herokuapp.LoginTest@2fd6b6c7]" started-at="2024-10-28T18:16:47 EET" name="tearDown" finished-at="2024-10-28T18:16:47 EET" duration-ms="27" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:tests.herokuapp.LoginTest@184cf7cf]" started-at="2024-10-23T13:07:57 EEST" name="tearDownClass" finished-at="2024-10-23T13:07:58 EEST" duration-ms="959" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:tests.herokuapp.LoginTest@2fd6b6c7]" started-at="2024-10-28T18:16:47 EET" name="setUp" finished-at="2024-10-28T18:16:50 EET" duration-ms="2912" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="verifyLoginWithValidCredentialsRedirectsToSecureArea()[pri:0, instance:tests.herokuapp.LoginTest@2fd6b6c7]" started-at="2024-10-28T18:16:50 EET" name="verifyLoginWithValidCredentialsRedirectsToSecureArea" finished-at="2024-10-28T18:16:51 EET" duration-ms="658" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyLoginWithValidCredentialsRedirectsToSecureArea -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.herokuapp.LoginTest@2fd6b6c7]" started-at="2024-10-28T18:16:51 EET" name="tearDown" finished-at="2024-10-28T18:16:51 EET" duration-ms="24" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:tests.herokuapp.LoginTest@2fd6b6c7]" started-at="2024-10-28T18:16:51 EET" name="tearDownClass" finished-at="2024-10-28T18:16:52 EET" duration-ms="1117" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDownClass -->
       </class> <!-- tests.herokuapp.LoginTest -->
     </test> <!-- LoginTest -->
-    <test started-at="2024-10-23T13:07:58 EEST" name="AddRemoveElementsTest" finished-at="2024-10-23T13:08:04 EEST" duration-ms="6313">
+    <test started-at="2024-10-28T18:16:52 EET" name="AddRemoveElementsTest" finished-at="2024-10-28T18:16:59 EET" duration-ms="7508">
       <class name="tests.herokuapp.AddRemoveElementsTest">
-        <test-method is-config="true" signature="setUpClass()[pri:0, instance:tests.herokuapp.AddRemoveElementsTest@37918c79]" started-at="2024-10-23T13:07:58 EEST" name="setUpClass" finished-at="2024-10-23T13:07:59 EEST" duration-ms="942" status="PASS">
+        <test-method is-config="true" signature="setUpClass()[pri:0, instance:tests.herokuapp.AddRemoveElementsTest@78e94dcf]" started-at="2024-10-28T18:16:52 EET" name="setUpClass" finished-at="2024-10-28T18:16:53 EET" duration-ms="995" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpClass -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:tests.herokuapp.AddRemoveElementsTest@37918c79]" started-at="2024-10-23T13:07:59 EEST" name="setUp" finished-at="2024-10-23T13:08:00 EEST" duration-ms="1520" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:tests.herokuapp.AddRemoveElementsTest@78e94dcf]" started-at="2024-10-28T18:16:53 EET" name="setUp" finished-at="2024-10-28T18:16:57 EET" duration-ms="4565" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="testAddRemoveElements()[pri:0, instance:tests.herokuapp.AddRemoveElementsTest@37918c79]" started-at="2024-10-23T13:08:00 EEST" name="testAddRemoveElements" finished-at="2024-10-23T13:08:03 EEST" duration-ms="2845" status="PASS">
+        <test-method signature="verifyCorrectNumberToDeleteButtonsAfterAddAndRemove()[pri:0, instance:tests.herokuapp.AddRemoveElementsTest@78e94dcf]" started-at="2024-10-28T18:16:57 EET" name="verifyCorrectNumberToDeleteButtonsAfterAddAndRemove" finished-at="2024-10-28T18:16:58 EET" duration-ms="1022" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- testAddRemoveElements -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.herokuapp.AddRemoveElementsTest@37918c79]" started-at="2024-10-23T13:08:03 EEST" name="tearDown" finished-at="2024-10-23T13:08:03 EEST" duration-ms="19" status="PASS">
+        </test-method> <!-- verifyCorrectNumberToDeleteButtonsAfterAddAndRemove -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.herokuapp.AddRemoveElementsTest@78e94dcf]" started-at="2024-10-28T18:16:58 EET" name="tearDown" finished-at="2024-10-28T18:16:58 EET" duration-ms="26" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:tests.herokuapp.AddRemoveElementsTest@37918c79]" started-at="2024-10-23T13:08:03 EEST" name="tearDownClass" finished-at="2024-10-23T13:08:04 EEST" duration-ms="984" status="PASS">
+        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:tests.herokuapp.AddRemoveElementsTest@78e94dcf]" started-at="2024-10-28T18:16:58 EET" name="tearDownClass" finished-at="2024-10-28T18:16:59 EET" duration-ms="898" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDownClass -->
