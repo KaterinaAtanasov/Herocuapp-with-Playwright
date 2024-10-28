@@ -3,7 +3,6 @@ package tests.herokuapp;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 import pages.herokuapp.LoginPage;
-
 import static org.testng.Assert.assertEquals;
 import static org.testng.Assert.assertTrue;
 

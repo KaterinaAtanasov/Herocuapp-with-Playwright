@@ -3,8 +3,6 @@ package tests.herokuapp;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 import pages.herokuapp.AddRemoveElementsPage;
-import pages.herokuapp.AddRemoveElementsPage;
-
 import static org.testng.Assert.assertEquals;
 
 public class AddRemoveElementsTest extends BaseTest {
