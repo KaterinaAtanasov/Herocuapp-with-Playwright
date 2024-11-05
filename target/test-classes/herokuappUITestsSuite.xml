@@ -15,4 +15,14 @@
             <class name="tests.herokuapp.AddRemoveElementsTest"/>
         </classes>
     </test>
+    <test name="CheckBoxTest">
+        <classes>
+            <class name="tests.herokuapp.CheckboxTest"/>
+        </classes>
+    </test>
+    <test name="DropdownTest">
+        <classes>
+            <class name="tests.herokuapp.DropdownTest"/>
+        </classes>
+    </test>
 </suite>

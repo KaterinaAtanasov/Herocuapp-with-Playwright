@@ -7,7 +7,6 @@ import static org.testng.Assert.assertEquals;
 
 public class AddRemoveElementsTest extends BaseTest {
     private AddRemoveElementsPage addRemoveElements;
-    private static final String H3_SELECTOR = "h3";
     private static final String PAGE_TITLE = "Add/Remove Elements";
 
     @BeforeMethod
@@ -19,7 +18,7 @@ public class AddRemoveElementsTest extends BaseTest {
     @Test
     public void verifyCorrectNumberToDeleteButtonsAfterAddAndRemove() {
         int elementCount = 5;
-        assertEquals(page.innerText(H3_SELECTOR), PAGE_TITLE,
+        assertEquals(addRemoveElements.getTitle(), PAGE_TITLE,
                 "Heading does not match the expected text");
         addRemoveElements.addElements(elementCount);
         assertEquals(addRemoveElements.getNumberOfDeleteButtons(), elementCount,

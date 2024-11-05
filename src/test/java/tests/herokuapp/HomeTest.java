@@ -8,10 +8,8 @@ import static org.testng.Assert.assertEquals;
 public class HomeTest extends BaseTest {
     private HomePage homePage;
     private static final String TITLE = "The Internet";
-    private static final String HEADING_1 = "Welcome to the-internet";
-    private static final String HEADING_2 = "Available Examples";
-    private static final String H1_SELECTOR = "h1";
-    private static final String H2_SELECTOR = "h2";
+    private static final String WELCOME_HEADING = "Welcome to the-internet";
+    private static final String EXAMPLES_HEADING = "Available Examples";
 
     @BeforeMethod
     public void setUp() {
@@ -26,7 +24,9 @@ public class HomeTest extends BaseTest {
 
     @Test
     public void verifyHomePageDisplaysCorrectText() {
-        assertEquals(homePage.getInnerText(H1_SELECTOR), HEADING_1, "Heading 1 does not match the expected text");
-        assertEquals(homePage.getInnerText(H2_SELECTOR), HEADING_2, "Heading 2 does not match the expected text");
+        assertEquals(homePage.getWelcomeHeadingText(), WELCOME_HEADING, "Welcome heading does not match the" +
+                " expected text");
+        assertEquals(homePage.getExamplesHeadingText(), EXAMPLES_HEADING, "Examples heading does not match the" +
+                " expected text");
     }
 }
