@@ -12,3 +12,9 @@ b
 pom.xml,4\4\442292b8a7efeabbe4cc176709b833b1792140ec
 9
 	README.md,8\e\8ec9a00bfd09b3190ac6b22251dbb1aa95a0579d
+\
+,src/main/java/pages/herokuapp/LoginPage.java,4\0\4043c410c5faa65c206effbdbe83fbd9c0f92109
+[
++src/main/java/pages/herokuapp/HomePage.java,b\a\ba821feff5ef04fb681978106684a75c9c89af29
+[
++src/main/java/pages/herokuapp/BasePage.java,e\9\e94cf6bf241d21378e9ba2e48931cf6c10fc99e9

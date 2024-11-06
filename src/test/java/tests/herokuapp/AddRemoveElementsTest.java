@@ -16,10 +16,12 @@ public class AddRemoveElementsTest extends BaseTest {
     }
 
     @Test
-    public void verifyCorrectNumberToDeleteButtonsAfterAddAndRemove() {
+    public void verifyAddRemoveElementsPageTitleIsCorrect() {
+        assertEquals(addRemoveElements.getTitle(), PAGE_TITLE, "Heading does not match the expected text");
+    }
+    @Test
+    public void verifyCorrectNumberToDeleteButtonsAfterAddAndRemoveElements() {
         int elementCount = 5;
-        assertEquals(addRemoveElements.getTitle(), PAGE_TITLE,
-                "Heading does not match the expected text");
         addRemoveElements.addElements(elementCount);
         assertEquals(addRemoveElements.getNumberOfDeleteButtons(), elementCount,
                 "The number of delete buttons is not as expected after adding elements");

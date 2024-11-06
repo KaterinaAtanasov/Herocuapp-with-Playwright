@@ -14,12 +14,13 @@ public class CheckboxTest extends BaseTest{
         super.setUp();
         checkboxPage = new CheckboxPage(page);
     }
+    @Test
+    public void verifyCheckboxTitlePageIsCorrect(){
+        assertEquals(checkboxPage.getTitle(), PAGE_TITLE, "Heading does not match the expected text");
+    }
 
     @Test
     public void verifyCheckboxIsCheckedAndUnchecked() {
-
-        assertEquals(checkboxPage.getTitle(), PAGE_TITLE,
-                "Heading does not match the expected text");
         assertTrue(checkboxPage.isCheckboxChecked(1), "Checkbox 2 should be checked");
 
         checkboxPage.checkCheckbox(0);

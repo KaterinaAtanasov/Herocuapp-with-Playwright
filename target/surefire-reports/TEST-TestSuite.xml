@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="TestSuite" time="59.158" tests="7" errors="0" skipped="0" failures="0">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="TestSuite" time="58.754" tests="11" errors="0" skipped="0" failures="0">
   <properties>
     <property name="java.specification.version" value="19"/>
     <property name="sun.cpu.isalist" value="amd64"/>
@@ -16,7 +16,7 @@
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="user.country" value="US"/>
     <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk-19\bin"/>
-    <property name="sun.java.command" value="C:\Users\Katerina\AppData\Local\Temp\surefire15167521207549856417\surefirebooter1327809991041962033.jar C:\Users\Katerina\AppData\Local\Temp\surefire15167521207549856417 2024-11-05T17-19-13_761-jvmRun1 surefire10606377986838490546tmp surefire_016696585361587758124tmp"/>
+    <property name="sun.java.command" value="C:\Users\Katerina\AppData\Local\Temp\surefire9574961454596993906\surefirebooter14940340570394557310.jar C:\Users\Katerina\AppData\Local\Temp\surefire9574961454596993906 2024-11-06T13-35-51_177-jvmRun1 surefire18300197804802865049tmp surefire_02860662880352528561tmp"/>
     <property name="jdk.debug" value="release"/>
     <property name="surefire.test.class.path" value="C:\Users\Katerina\Desktop\Herocuapp with Playwright\target\test-classes;C:\Users\Katerina\Desktop\Herocuapp with Playwright\target\classes;C:\Users\Katerina\.m2\repository\com\microsoft\playwright\playwright\1.46.0\playwright-1.46.0.jar;C:\Users\Katerina\.m2\repository\com\google\code\gson\gson\2.11.0\gson-2.11.0.jar;C:\Users\Katerina\.m2\repository\com\google\errorprone\error_prone_annotations\2.27.0\error_prone_annotations-2.27.0.jar;C:\Users\Katerina\.m2\repository\org\opentest4j\opentest4j\1.3.0\opentest4j-1.3.0.jar;C:\Users\Katerina\.m2\repository\com\microsoft\playwright\driver\1.46.0\driver-1.46.0.jar;C:\Users\Katerina\.m2\repository\com\microsoft\playwright\driver-bundle\1.46.0\driver-bundle-1.46.0.jar;C:\Users\Katerina\.m2\repository\org\testng\testng\7.4.0\testng-7.4.0.jar;C:\Users\Katerina\.m2\repository\com\beust\jcommander\1.78\jcommander-1.78.jar;C:\Users\Katerina\.m2\repository\org\webjars\jquery\3.5.1\jquery-3.5.1.jar;C:\Users\Katerina\.m2\repository\org\junit\jupiter\junit-jupiter\5.8.2\junit-jupiter-5.8.2.jar;C:\Users\Katerina\.m2\repository\org\junit\jupiter\junit-jupiter-api\5.8.2\junit-jupiter-api-5.8.2.jar;C:\Users\Katerina\.m2\repository\org\junit\platform\junit-platform-commons\1.8.2\junit-platform-commons-1.8.2.jar;C:\Users\Katerina\.m2\repository\org\apiguardian\apiguardian-api\1.1.2\apiguardian-api-1.1.2.jar;C:\Users\Katerina\.m2\repository\org\junit\jupiter\junit-jupiter-params\5.8.2\junit-jupiter-params-5.8.2.jar;C:\Users\Katerina\.m2\repository\org\junit\jupiter\junit-jupiter-engine\5.8.2\junit-jupiter-engine-5.8.2.jar;C:\Users\Katerina\.m2\repository\org\junit\platform\junit-platform-engine\1.8.2\junit-platform-engine-1.8.2.jar;"/>
     <property name="sun.cpu.endian" value="little"/>
@@ -31,7 +31,7 @@
     <property name="line.separator" value="&#10;"/>
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
-    <property name="surefire.real.class.path" value="C:\Users\Katerina\AppData\Local\Temp\surefire15167521207549856417\surefirebooter1327809991041962033.jar"/>
+    <property name="surefire.real.class.path" value="C:\Users\Katerina\AppData\Local\Temp\surefire9574961454596993906\surefirebooter14940340570394557310.jar"/>
     <property name="user.script" value=""/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
     <property name="java.runtime.version" value="19+36-2238"/>
@@ -60,11 +60,15 @@
     <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
     <property name="java.class.version" value="63.0"/>
   </properties>
-  <testcase name="verifyHomePageDisplaysCorrectText" classname="tests.herokuapp.HomeTest" time="0.078"/>
-  <testcase name="verifyHomePageTitleIsCorrect" classname="tests.herokuapp.HomeTest" time="0.009"/>
-  <testcase name="verifyLoginAttemptWithInvalidCredentialsDisplaysErrorMessage" classname="tests.herokuapp.LoginTest" time="0.837"/>
-  <testcase name="verifyLoginWithValidCredentialsRedirectsToSecureArea" classname="tests.herokuapp.LoginTest" time="0.557"/>
-  <testcase name="verifyCorrectNumberToDeleteButtonsAfterAddAndRemove" classname="tests.herokuapp.AddRemoveElementsTest" time="1.159"/>
-  <testcase name="verifyCheckboxIsCheckedAndUnchecked" classname="tests.herokuapp.CheckboxTest" time="0.368"/>
-  <testcase name="verifySDefaultOptionAndSelectionBehavior" classname="tests.herokuapp.DropdownTest" time="0.293"/>
+  <testcase name="verifyHomePageDisplaysCorrectText" classname="tests.herokuapp.HomeTest" time="0.085"/>
+  <testcase name="verifyHomePageTitleIsCorrect" classname="tests.herokuapp.HomeTest" time="0.008"/>
+  <testcase name="verifyLoginAttemptWithInvalidCredentialsDisplaysErrorMessage" classname="tests.herokuapp.LoginTest" time="0.58"/>
+  <testcase name="verifyLoginWithValidCredentialsRedirectsToSecureArea" classname="tests.herokuapp.LoginTest" time="0.606"/>
+  <testcase name="verifyAddRemoveElementsPageTitleIsCorrect" classname="tests.herokuapp.AddRemoveElementsTest" time="0.043"/>
+  <testcase name="verifyCorrectNumberToDeleteButtonsAfterAddAndRemoveElements" classname="tests.herokuapp.AddRemoveElementsTest" time="1.161"/>
+  <testcase name="verifyCheckboxIsCheckedAndUnchecked" classname="tests.herokuapp.CheckboxTest" time="0.419"/>
+  <testcase name="verifyCheckboxTitlePageIsCorrect" classname="tests.herokuapp.CheckboxTest" time="0.029"/>
+  <testcase name="verifyDefaultOptionOfTheDropdownIsSelected" classname="tests.herokuapp.DropdownTest" time="0.161"/>
+  <testcase name="verifyDropdownPageTitleIsCorrect" classname="tests.herokuapp.DropdownTest" time="0.071"/>
+  <testcase name="verifySelectedOptionInTheDropdown" classname="tests.herokuapp.DropdownTest" time="0.101"/>
 </testsuite>

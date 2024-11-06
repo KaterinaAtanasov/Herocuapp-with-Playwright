@@ -15,6 +15,10 @@ public class DropdownPage extends BasePage {
         this.navigate(URL);
     }
 
+    public void selectOption(String value) {
+        page.selectOption(DROPDOWN_SELECTOR, new SelectOption().setValue(value));
+    }
+
     public String getSelectedOptionValue() {
         return page.getAttribute(DROPDOWN_SELECTOR + " option[selected]", "value");
     }
@@ -22,10 +26,6 @@ public class DropdownPage extends BasePage {
     public String getSelectedOptionText() {
         return (String) page.evaluate("(dropdown) => dropdown.options[dropdown.selectedIndex].innerText",
                 page.querySelector(DROPDOWN_SELECTOR));
-    }
-
-    public void selectOption(String value) {
-        page.selectOption(DROPDOWN_SELECTOR, new SelectOption().setValue(value));
     }
 
     public String getDefaultOption() {
