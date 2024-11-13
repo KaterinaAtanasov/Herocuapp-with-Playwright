@@ -25,4 +25,14 @@
             <class name="tests.herokuapp.DropdownTest"/>
         </classes>
     </test>
+    <test name="HoversTest">
+    <classes>
+        <class name="tests.herokuapp.HoversTest"/>
+    </classes>
+    </test>
+    <test name="DragAndDropTest">
+        <classes>
+            <class name="tests.herokuapp.DragAndDropTest"/>
+        </classes>
+    </test>
 </suite>
