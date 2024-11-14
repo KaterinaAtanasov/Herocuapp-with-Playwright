@@ -1,4 +1,7 @@
 package com.herokuapp.playwright;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
+
 import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.io.InputStream;
@@ -13,6 +16,7 @@ public class Config {
     public static final String INVALID_USERNAME;
     public static final String INVALID_PASSWORD;
 
+    private static final Logger LOGGER = LogManager.getLogger(Config.class);
 
     static {
         Properties prop = new Properties();
@@ -22,11 +26,15 @@ public class Config {
             if (ip != null) {
                 prop.load(ip);
             } else {
+                LOGGER.error("Could not find the 'config.properties' file.");
                 throw new FileNotFoundException("Could not find the 'config.properties' file.");
             }
         } catch (IOException e) {
-            e.printStackTrace();
+            LOGGER.error("Loading properties failed!", e);
         }
+
+        LOGGER.info("Properties loaded successfully.");
+
 
         BASE_URL = prop.getProperty("base_url");
         BROWSER_TYPE = System.getProperty("browser_type", prop.getProperty("browser_type"));

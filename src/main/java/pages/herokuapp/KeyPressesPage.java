@@ -23,10 +23,10 @@ public class KeyPressesPage extends BasePage {
     }
 
     public String getTitle() {
-        return page.innerText("h3");
+        return page.innerText(PAGE_TITLE_SELECTOR);
     }
 
     public String getPageSubTitleText() {
-        return page.innerText("p");
+        return page.innerText(PAGE_SUBTITLE_SELECTOR);
     }
 }
