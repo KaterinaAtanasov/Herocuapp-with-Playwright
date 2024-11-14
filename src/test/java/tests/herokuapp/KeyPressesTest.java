@@ -1,7 +1,7 @@
 package tests.herokuapp;
 
+import dataproviders.KeysProvider;
 import org.testng.annotations.BeforeMethod;
-import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 import pages.herokuapp.KeyPressesPage;
 
@@ -32,18 +32,7 @@ public class KeyPressesTest extends BaseTest {
                 "the expected text");
     }
 
-    @DataProvider(name = "keys-provider")
-    public Object[][] provideData() {
-        return new Object[][] {
-                { "A", "A" },
-                { "1", "1" },
-                { "Space", "SPACE" },
-                { "Enter", "ENTER" },
-                { "Tab", "TAB" },
-                { "Comma", "COMMA" }};
-    }
-
-    @Test(dataProvider = "keys-provider")
+    @Test(dataProvider = "pressKeysProvider", dataProviderClass = KeysProvider.class)
     public void validateKeyPressed(String key, String expectedKey) {
         keyPressesPage.pressKey(key);
         assertEquals(keyPressesPage.getPressedKeyResult(), "You entered: " + expectedKey,

@@ -35,4 +35,9 @@
             <class name="tests.herokuapp.DragAndDropTest"/>
         </classes>
     </test>
+    <test name="KeyPressesTest">
+        <classes>
+            <class name="tests.herokuapp.KeyPressesTest"/>
+        </classes>
+    </test>
 </suite>
