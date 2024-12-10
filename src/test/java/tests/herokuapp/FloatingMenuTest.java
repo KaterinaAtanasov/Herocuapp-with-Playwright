@@ -4,15 +4,22 @@ import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 import pages.herokuapp.FloatingMenuPage;
 
+import static org.testng.Assert.assertEquals;
 import static org.testng.Assert.assertTrue;
 
-public class FloatingMenuPageTest extends BaseTest{
+public class FloatingMenuTest extends BaseTest{
     private FloatingMenuPage floatingMenuPage;
+    private static final String PAGE_TITLE = "Floating Menu";
 
     @BeforeMethod
     public void setUp() {
         super.setUp();
         floatingMenuPage = new FloatingMenuPage(page);
+    }
+    @Test
+    public void verifyFloatingMenuPageTitleIsCorrect(){
+        assertEquals(floatingMenuPage.getTitle(), PAGE_TITLE, "Page title does " +
+                "not match the expected text");
     }
 
     @Test

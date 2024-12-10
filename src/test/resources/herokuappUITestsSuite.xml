@@ -40,4 +40,19 @@
             <class name="tests.herokuapp.KeyPressesTest"/>
         </classes>
     </test>
+    <test name="ExitIntentTest">
+        <classes>
+            <class name="tests.herokuapp.ExitIntentTest"/>
+        </classes>
+    </test>
+    <test name="FloatingMenuTest">
+        <classes>
+            <class name="tests.herokuapp.FloatingMenuTest"/>
+        </classes>
+    </test>
+    <test name="DynamicControlsTest">
+        <classes>
+            <class name="tests.herokuapp.DynamicControlsTest"/>
+        </classes>
+    </test>
 </suite>

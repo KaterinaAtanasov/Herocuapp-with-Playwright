@@ -1,5 +1,6 @@
 package pages.herokuapp;
 import com.herokuapp.playwright.Config;
+import com.microsoft.playwright.ElementHandle;
 import com.microsoft.playwright.Page;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
@@ -21,5 +22,11 @@ public class BasePage {
         String title = page.title();
         LOGGER.info("Page title is: {}", title);
         return title;
+    }
+    public void waitForLoading() {
+        ElementHandle loading = page.querySelector("#loading");
+        if (loading != null) {
+            page.waitForFunction("(element) => !element.isConnected", loading);
+        }
     }
 }

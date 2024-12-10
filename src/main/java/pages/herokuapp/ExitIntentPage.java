@@ -37,3 +37,4 @@ public class ExitIntentPage extends BasePage{
         return page.querySelector(POPUP_TITLE_SELECTOR).innerText();
     }
 }
+

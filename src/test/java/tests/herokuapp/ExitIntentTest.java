@@ -8,10 +8,10 @@ import static org.junit.jupiter.api.Assertions.assertTrue;
 import static org.testng.Assert.assertEquals;
 import static org.testng.Assert.assertFalse;
 
-public class ExitIntentPageTest extends BaseTest{
+public class ExitIntentTest extends BaseTest{
 
     private ExitIntentPage exitIntentPage;
-    private static final String PAGE_HEADING = "Exit Intent";
+    private static final String PAGE_TITLE = "Exit Intent";
     private static final String POPUP_TITLE = "THIS IS A MODAL WINDOW";
 
     @BeforeMethod
@@ -21,8 +21,8 @@ public class ExitIntentPageTest extends BaseTest{
     }
 
     @Test
-    public void verifyPageHeadingIsCorrect(){
-        assertEquals(exitIntentPage.getTitle(), PAGE_HEADING, "Page heading does " +
+    public void verifyExitIntentPageTitleIsCorrect(){
+        assertEquals(exitIntentPage.getTitle(), PAGE_TITLE, "Page title does " +
                 "not match the expected text");
     }
 

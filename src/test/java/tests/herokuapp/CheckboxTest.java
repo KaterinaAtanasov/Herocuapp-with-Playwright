@@ -9,6 +9,7 @@ import static org.testng.Assert.*;
 public class CheckboxTest extends BaseTest{
     private CheckboxPage checkboxPage;
     private static final String PAGE_TITLE = "Checkboxes";
+
     @BeforeMethod
     public void setUp() {
         super.setUp();
