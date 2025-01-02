@@ -111,6 +111,6 @@ public class DynamicControlsTest extends BaseTest {
         dynamicControlsPage.clickInputButton();
         dynamicControlsPage.waitForState(dynamicControlsPage.getInputExampleLoader(), "HIDDEN");
         assertEquals(dynamicControlsPage.getInputMessageText(),INPUT_DISABLED_MESSAGE,"Input message text does not match the expected text.");
-        assertTrue(dynamicControlsPage.isInputDisabled(),"Input field is not disabled");
+        assertTrue(dynamicControlsPage.isElementDisabled(), "Input field is not disabled");
     }
 }

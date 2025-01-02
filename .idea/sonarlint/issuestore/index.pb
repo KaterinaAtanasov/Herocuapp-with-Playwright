@@ -16,8 +16,6 @@ h
 8src/test/java/tests/herokuapp/AddRemoveElementsTest.java,3\3\3319afcf1c2bdf419a6993574067bb73075fe01c
 h
 8src/main/java/pages/herokuapp/AddRemoveElementsPage.java,d\c\dc52d47bdf6a8f91a1c4c8001353b55ea8ac5de1
-]
--src/main/java/pages/herokuapp/HoversPage.java,e\5\e53940102077f4ce831afdd7bcf8ec1db12377f4
 _
 /src/test/java/tests/herokuapp/DropdownTest.java,d\a\da8f97b5396dfee0051fc4f256f292581b9af07d
 b
@@ -32,8 +30,6 @@ _
 /src/main/java/pages/herokuapp/CheckboxPage.java,f\5\f5d64578357c0e8b78f21148ece233ab4c20dd29
 [
 +src/test/java/tests/herokuapp/BaseTest.java,9\9\99ba3c1f3c78f833bfcd6d6d9c22355a95e5484a
-a
-1src/main/java/pages/herokuapp/KeyPressesPage.java,3\d\3dfe3a6cae2ccc6b6e1172c9c662ad3f4b0c62f7
 [
 +src/test/java/tests/herokuapp/HomeTest.java,3\7\37fd7021de3e9f0d70ec0b5e8a9bcb5d8ee8a9ad
 _
@@ -42,3 +38,11 @@ b
 2src/test/java/tests/herokuapp/DragAndDropTest.java,9\9\99346e3b5409bd98c70576a8482b203ed10d5e2c
 ]
 -src/test/java/tests/herokuapp/HoversTest.java,3\f\3f725a4fa7fb373ec421c2c63e84e981a152ac6b
+c
+3src/test/java/tests/herokuapp/FloatingMenuTest.java,b\f\bff00fcd1fd6b16a03c5d3f269a6d8dd7503c577
+a
+1src/main/java/pages/herokuapp/ExitIntentPage.java,a\3\a387cb6593dcbc3fc0e90044d7fb2401a9ddf177
+[
++src/main/java/pages/herokuapp/BasePage.java,e\9\e94cf6bf241d21378e9ba2e48931cf6c10fc99e9
+a
+1src/test/java/tests/herokuapp/ExitIntentTest.java,3\7\377adee5769a1a0e5ae37de3cbbd19e99d9e948b

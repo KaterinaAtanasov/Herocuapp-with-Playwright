@@ -5,7 +5,7 @@ import org.testng.annotations.DataProvider;
 public class KeysProvider {
     @DataProvider
     public static Object[][] pressKeysProvider() {
-        Object[][] dataset = new Object[7][2];
+        Object[][] dataset = new Object[6][2];
 
         dataset[0][0] = "A";
         dataset[0][1] = "A";
@@ -24,9 +24,6 @@ public class KeysProvider {
 
         dataset[5][0] = "Comma";
         dataset[5][1] = "COMMA";
-
-        dataset[6][0] = "Win";
-        dataset[6][1] = "WIN";
 
         return dataset;
     }

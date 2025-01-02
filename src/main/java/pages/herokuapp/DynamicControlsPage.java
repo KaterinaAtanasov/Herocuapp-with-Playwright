@@ -52,11 +52,11 @@ public class DynamicControlsPage extends BasePage {
         return INPUT_LOADER;
     }
     public boolean isInputEnabled() {
-        return page.getAttribute(INPUT_SELECTOR, "readonly") == null;
+        return page.getAttribute(INPUT_SELECTOR, "disabled") == null;
     }
 
-    public boolean isInputDisabled() {
-        return page.getAttribute(INPUT_SELECTOR, "readonly") != null;
+    public boolean isElementDisabled() {
+        return page.getAttribute(INPUT_SELECTOR, "disabled") != null;
     }
     public void clickInputButton() {
         page.click(INPUT_BUTTON_SELECTOR);
