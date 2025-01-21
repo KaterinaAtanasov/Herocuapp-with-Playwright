@@ -9,7 +9,7 @@ import static org.testng.Assert.assertEquals;
 
 public class ContextMenuTest extends BaseTest{
     private ContextMenuPage contextMenuPage;
-    private static final String PAGE_TITLE = "Floating Menu";
+    private static final String PAGE_TITLE = "Context Menu";
 
     @BeforeMethod
     public void setUp() {
