@@ -3,7 +3,6 @@ package tests.herokuapp;
 import org.testng.Assert;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
-import pages.herokuapp.CheckboxPage;
 import pages.herokuapp.JavaScriptAlertsPage;
 
 import static org.testng.Assert.assertEquals;

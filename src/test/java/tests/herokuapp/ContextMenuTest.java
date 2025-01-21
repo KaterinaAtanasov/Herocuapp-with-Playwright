@@ -4,7 +4,6 @@ import org.testng.Assert;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 import pages.herokuapp.ContextMenuPage;
-import pages.herokuapp.FloatingMenuPage;
 
 import static org.testng.Assert.assertEquals;
 
